@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.warp {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkgray;
+}
+
+#animation-warp {
+  width: 100%;
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.warp .item {
+  background-color: blanchedalmond;
+  width: 30px;
+  margin: 0 10px;
+  position: relative;
+  transition: background-color 0.1s;
+  position: relative;
+}
+
+.warp .item p {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.item-current {
+  background-color: skyblue !important;
+}
+
+.item-pivot {
+  background-color: yellow !important;
+}
+
+.item-checked {
+  background-color: red !important;
+}
+.item-less-than-pivot {
+  background-color: green !important;
+}
+
+.item-more-than-pivot {
+  background-color: blue !important;
+}
+
+#input-container {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-container .label,
+#input-container #input-array,
+#input-container #start {
+  height: 30px;
+}
+
+#input-container .label {
+  line-height: 30px;
+}
+
+#input-container #input-array {
+  width: 250px;
+}
+
+#input-container #start {
+  width: 50px;
+  background-color: skyblue;
+}
